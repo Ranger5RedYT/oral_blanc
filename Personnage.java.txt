@@ -1,0 +1,45 @@
+// Personnage.java
+public class Personnage {
+    private String nom;
+    private String profession;
+    private String competence;
+
+    public Personnage(String nom, String profession, String competence) {
+        this.nom = nom;
+        this.profession = profession;
+        this.competence = competence;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession) {
+        this.profession = profession;
+    }
+
+    public String getCompetence() {
+        return competence;
+    }
+
+    public void setCompetence(String competence) {
+        this.competence = competence;
+    }
+
+    @Override
+    public String toString() {
+        return "Personnage{" +
+                "nom='" + nom + '\'' +
+                ", profession='" + profession + '\'' +
+                ", competence='" + competence + '\'' +
+                '}';
+    }
+}
